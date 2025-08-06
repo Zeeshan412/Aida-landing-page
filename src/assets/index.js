@@ -4,6 +4,8 @@ import HeroBg from './svgs/hero-bg.svg';
 import BgWhyChoose from './svgs/bg for whychoose.svg';
 import Adds from './svgs/adds.svg';
 import FooterSvg from './svgs/footer.svg';
+import logo2 from './svgs/logo2.svg';
+import Madam from './svgs/madam.svg';
 
 // Export SVG assets
 export {
@@ -11,5 +13,7 @@ export {
   HeroBg,
   BgWhyChoose,
   Adds,
-  FooterSvg
+  FooterSvg,
+  logo2,
+  Madam
 };

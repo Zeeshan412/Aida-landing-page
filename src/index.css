@@ -7,3 +7,16 @@
     font-family: 'Poppins', sans-serif;
   }
 }
+
+/* Add to your CSS file for responsive grid */
+.legal-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .legal-questions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

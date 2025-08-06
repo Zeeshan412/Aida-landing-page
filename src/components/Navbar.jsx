@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="w-full max-w-[1440px] h-[71px] bg-white relative mx-auto border-b-[0.67px] border-[#E0E0E1]">
       <div className="absolute top-0 right-0 w-full h-[0.67px] bg-[#E0E0E1]"></div>
       <Container>
-        <div className="flex items-center justify-between h-[71px]">
+        <div className="flex items-center justify-between h-[71px] w-full px-0 md:px-[139px]">
           <div className="flex items-center">
             <img src={Logo} alt="Aida Logo" className="h-[50px]" />
           </div>
