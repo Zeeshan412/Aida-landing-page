@@ -1,18 +1,17 @@
-import React from "react";
-import Container from "../layouts/Container";
-import { BgWhyChoose } from "../assets";
+import React from 'react';
+import Container from '../layouts/Container';
+import { BgWhyChoose } from '../assets/index';
 
 const Footer = () => (
   <Container>
     <footer
-      className="w-full max-w-[1440px] mx-auto bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center min-h-[350px] md:min-h-[361px] opacity-100 relative"
-      style={{ backgroundImage: `url(${BgWhyChoose})` }}
+      className="w-full max-w-[1440px] mx-auto bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center min-h-[650px] sm:min-h-[550px] md:min-h-[361px] opacity-100 relative bg-[image:var(--bg-why-choose)]"
+      style={{ '--bg-why-choose': `url(${BgWhyChoose})` }}
     >
       {/* Footer content goes here */}
       <div className="flex flex-col w-full h-full py-6 md:py-10">
-        
-        {/* Logo - Desktop positioning preserved, mobile responsive */}
-        <div className="absolute left-4 md:left-[117px] top-6 md:top-[55px] w-[90px] md:w-[120px] h-auto mb-4 md:mb-6 flex justify-center items-center">
+          {/* Logo - Desktop positioning preserved, mobile responsive */}
+          <header className="absolute left-4 sm:left-8 md:left-[117px] top-6 md:top-[55px] w-[90px] md:w-[120px] h-auto mb-4 md:mb-6 flex justify-center items-center">
           <svg
             width="112"
             height="50"
@@ -57,10 +56,7 @@ const Footer = () => (
               d="M48.1548 13.0579L39.698 34.8347H44.7064L46.3075 30.4132H55.298L56.9812 34.8347H62.0717L53.2043 13.0579H48.1548ZM47.7854 26.3223C48.3191 24.9174 48.8117 23.4711 49.3043 22.0661C49.6738 21.0331 50.2896 19.2562 50.5359 18.2231C50.618 17.8099 50.7001 17.3141 50.7412 16.9008C50.9464 18.4298 51.1517 19.1322 52.1369 21.9422C52.6706 23.3884 53.2043 24.876 53.738 26.3636H47.7854V26.3223Z"
               fill="white"
             />
-            <path
-              d="M68.1065 21.4463H63.7139V34.8347H68.1065V21.4463Z"
-              fill="white"
-            />
+            <path d="M68.1065 21.4463H63.7139V34.8347H68.1065V21.4463Z" fill="white" />
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -86,188 +82,177 @@ const Footer = () => (
               fill="#0057FF"
             />
           </svg>
-        </div>
-      </div>
-
-      {/* Description - Desktop positioning preserved, mobile responsive */}
-      <div>
-        <p className="font-['Plus Jakarta Sans'] font-normal text-[14px] md:text-[16px] leading-[150%] tracking-[-0.02em] text-white absolute left-4 md:left-[107px] top-20 md:top-[120px] max-w-[80vw] md:max-w-[350px] mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        </p>
-      </div>
-
-      {/* Navigation Links - Desktop positioning preserved, mobile stacked */}
-      <div className="absolute top-[180px] sm:top-[160px] md:top-[130px] left-4 md:left-[500px] transform md:-translate-y-1/2 flex flex-col gap-4 z-10">
-        <a
-          href="#"
-          className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
-        >
-          Home
-        </a>
-        <a
-          href="#"
-          className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
-        >
-          About
-        </a>
-        <a
-          href="#"
-          className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
-        >
-          Pricing
-        </a>
-        <a
-          href="#"
-          className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
-        >
-          Contact
-        </a>
-      </div>
-
-      {/* Social Media - Desktop positioning preserved, mobile repositioned */}
-      <div className="absolute top-[350px] left-4 sm:top-[320px] sm:left-8 md:top-[90px] md:left-[45%] transform md:-translate-y-1/2 flex flex-col items-start md:items-center z-10">
-        <span className="font-['Plus Jakarta Sans'] font-semibold text-[16px] text-white mb-3 md:mr-22">
-          Social
-        </span>
-        <div className="flex flex-row gap-2 md:gap-4">
-          <a href="#" aria-label="Facebook" className="p-1 hover:bg-white/10 rounded-md transition-colors">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="text-white"
-            >
-              <path
-                d="M17 2.05A10 10 0 1 0 12 22V14.89h-2.13V12h2.13v-2.2c0-2.1 1.26-3.25 3.18-3.25.92 0 1.88.16 1.88.16v2.07h-1.06c-1.05 0-1.38.65-1.38 1.32V12h2.35l-.38 2.89h-1.97V22A10 10 0 0 0 17 2.05Z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
-          <a href="#" aria-label="Twitter" className="p-1 hover:bg-white/10 rounded-md transition-colors">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="text-white"
-            >
-              <path
-                d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 12 9.03c0 .34.04.67.1.99A12.13 12.13 0 0 1 3.1 4.87a4.28 4.28 0 0 0 1.32 5.7c-.7-.02-1.36-.22-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.28 4.28 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0 0 24 4.59a8.5 8.5 0 0 1-2.54.7Z"
-                fill="currentColor"
-              />
-            </svg>
-          </a>
-          <a href="#" aria-label="Instagram" className="p-1 hover:bg-white/10 rounded-md transition-colors">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="text-white"
-            >
-              <rect
-                width="18"
-                height="18"
-                x="3"
-                y="3"
-                rx="5"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-              <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
-              <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-            </svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" className="p-1 hover:bg-white/10 rounded-md transition-colors">
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="text-white"
-            >
-              <rect
-                width="18"
-                height="18"
-                x="3"
-                y="3"
-                rx="4"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-              <path
-                d="M8 11v5"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <circle cx="8" cy="8" r="1" fill="currentColor" />
-              <path
-                d="M12 16v-3a2 2 0 1 1 4 0v3"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      {/* Newsletter Subscribe - Desktop positioning preserved, mobile layout adjusted */}
-      <div className="absolute top-[450px] left-4 right-4 sm:top-[420px] sm:left-8 sm:right-8 md:top-[118px] md:left-[55%] md:right-auto md:transform md:-translate-y-1/2 flex flex-col md:items-center z-10">
-        <span className="font-['Plus Jakarta Sans'] font-semibold text-[16px] text-white mb-3 md:-ml-[170px] md:mt-[30px]">
-          Subscribe
-        </span>
-        <span className="font-['Plus Jakarta Sans'] font-normal text-[14px] text-white mb-2 md:ml-[25px]">
-          Join our community to receive updates
-        </span>
-        
-        {/* Mobile/Small Screen Layout */}
-        <div className="md:hidden flex flex-col gap-3 w-full">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full h-[44px] rounded-[160px] bg-[#E2EDF9] text-[#092540] px-6 text-[16px] outline-none border-none placeholder:text-[#092540]/60"
-          />
-          <button className="w-full h-[44px] rounded-[160px] bg-[#0057FF] text-white font-['Plus Jakarta Sans'] font-medium hover:bg-[#0047CC] transition-colors">
-            Subscribe
-          </button>
-        </div>
-        
-        {/* Desktop Layout - Preserving original inline styles */}
-        <div className="hidden md:flex items-center relative">
-          <input
-            type="text"
-            placeholder="Enter your email"
-            className="w-[251px] h-[44px] rounded-[160px] bg-[#E2EDF9] text-[#092540] px-6 text-[16px] outline-none border-none"
-            style={{ marginTop: '8px', marginLeft: '130px' }}
-          />
-          <button
-            className="w-[116px] h-[44px] rounded-[160px] bg-[#0057FF] text-white flex items-center justify-center hover:bg-[#0047CC] transition-colors"
-            style={{ padding: '20px 16px', gap: '10px', opacity: 1, marginTop: '9px', marginLeft: '20px' }}
+          </header>
+        {/* Description - Desktop positioning preserved, mobile responsive */}
+        <article>
+          <p className="font-['Plus Jakarta Sans'] font-normal text-[14px] md:text-[16px] leading-[150%] tracking-[-0.02em] text-white absolute left-4 sm:left-8 md:left-[107px] top-20 md:top-[120px] max-w-[80vw] sm:max-w-[70vw] md:max-w-[350px] mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          </p>
+        </article>
+        {/* Navigation Links - Hidden on mobile, visible on desktop */}
+        <nav className="absolute hidden md:flex top-[130px] left-[500px] transform -translate-y-1/2 flex-col gap-4 z-10">
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
           >
+            Home
+          </a>
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
+          >
+            About
+          </a>
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
+          >
+            Pricing
+          </a>
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[16px] leading-[150%] tracking-[-0.02em] text-white hover:underline transition-colors"
+          >
+            Contact
+          </a>
+        </nav>
+        {/* Social Media - Desktop positioning preserved, mobile repositioned */}
+        <aside className="absolute top-[180px] left-4 sm:top-[160px] sm:left-8 md:top-[90px] md:left-[45%] lg:left-[45%] transform md:-translate-y-1/2 flex flex-col items-start md:items-center z-10">
+          <span className="font-['Plus Jakarta Sans'] font-semibold text-[14px] sm:text-[16px] text-white mb-2 sm:mb-3 md:mr-22">
+            Social
+          </span>
+          <div className="flex flex-row gap-2 md:gap-4">
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="p-1 hover:bg-white/10 rounded-md transition-colors"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="text-white">
+                <path
+                  d="M17 2.05A10 10 0 1 0 12 22V14.89h-2.13V12h2.13v-2.2c0-2.1 1.26-3.25 3.18-3.25.92 0 1.88.16 1.88.16v2.07h-1.06c-1.05 0-1.38.65-1.38 1.32V12h2.35l-.38 2.89h-1.97V22A10 10 0 0 0 17 2.05Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="p-1 hover:bg-white/10 rounded-md transition-colors"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="text-white">
+                <path
+                  d="M22.46 6c-.77.35-1.6.59-2.47.7a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 12 9.03c0 .34.04.67.1.99A12.13 12.13 0 0 1 3.1 4.87a4.28 4.28 0 0 0 1.32 5.7c-.7-.02-1.36-.22-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.28 4.28 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.37-.01-.56A8.7 8.7 0 0 0 24 4.59a8.5 8.5 0 0 1-2.54.7Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="p-1 hover:bg-white/10 rounded-md transition-colors"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="text-white">
+                <rect
+                  width="18"
+                  height="18"
+                  x="3"
+                  y="3"
+                  rx="5"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="p-1 hover:bg-white/10 rounded-md transition-colors"
+            >
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" className="text-white">
+                <rect
+                  width="18"
+                  height="18"
+                  x="3"
+                  y="3"
+                  rx="4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                />
+                <path d="M8 11v5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                <circle cx="8" cy="8" r="1" fill="currentColor" />
+                <path
+                  d="M12 16v-3a2 2 0 1 1 4 0v3"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </aside>
+        {/* Newsletter Subscribe - Desktop positioning preserved, mobile layout adjusted */}
+        <section className="absolute top-[250px] left-4 right-4 sm:top-[240px] sm:left-8 sm:right-8 md:top-[118px] md:left-[55%] lg:left-[55%] md:right-auto md:transform md:-translate-y-1/2 flex flex-col md:items-center z-10">
+          <span className="font-['Plus Jakarta Sans'] font-semibold text-[16px] sm:text-[18px] text-white mb-2 sm:mb-3 md:-ml-[170px] md:mt-[30px]">
             Subscribe
-          </button>
-        </div>
-        
-        <span className="font-['Plus Jakarta Sans'] font-normal text-[12px] text-white mt-4 opacity-80 leading-[150%] tracking-[-0.01em] md:ml-6">
-          By subscribing, you agree to our Privacy Policy
-        </span>
-      </div>
-
-      {/* Footer Links - Desktop positioning preserved, mobile repositioned */}
-      <div className="absolute bottom-20 left-4 sm:bottom-16 sm:left-8 md:bottom-6 md:left-34 flex flex-col sm:flex-row gap-4 sm:gap-8 z-10">
-        <a href="#" className="font-['Plus Jakarta Sans'] font-normal text-[14px] leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors">Privacy Policy</a>
-        <a href="#" className="font-['Plus Jakarta Sans'] font-normal text-[14px] leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors">Terms of Service</a>
-        <a href="#" className="font-['Plus Jakarta Sans'] font-normal text-[14px] leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors">Cookie Policy</a>
-      </div>
-
-      {/* Copyright - Desktop positioning preserved, mobile repositioned */}
-      <div className="absolute bottom-6 left-4 sm:left-8 md:bottom-6 md:right-40 flex flex-row gap-8 z-10 md:text-right">
-        <span className="font-['Plus Jakarta Sans'] font-normal text-[14px] leading-[240%] tracking-[-0.02em] text-[#8C8F9D]">
-          © 2024 James Alonso. All rights reserved
-        </span>
+          </span>
+          <span className="font-['Plus Jakarta Sans'] font-normal text-[14px] sm:text-[16px] text-white mb-2 md:ml-[25px] max-w-[300px]">
+            Join our community to receive updates
+          </span>
+          {/* Mobile/Small Screen Layout */}
+          <div className="md:hidden flex flex-col gap-3 w-full">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full h-[44px] rounded-[160px] bg-[#E2EDF9] text-[#092540] px-4 sm:px-6 text-[14px] sm:text-[16px] outline-none border-none placeholder:text-[#092540]/60 placeholder-shown:text-[#092540]/60"
+            />
+            <button className="w-full h-[44px] rounded-[160px] bg-[#0057FF] text-white font-['Plus Jakarta Sans'] font-medium text-[14px] sm:text-[16px] hover:bg-[#0047CC] transition-colors">
+              Subscribe
+            </button>
+          </div>
+          {/* Desktop Layout */}
+          <div className="hidden md:flex items-center relative mt-2 ml-[130px] gap-5">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              className="w-[251px] h-[44px] rounded-[160px] bg-[#E2EDF9] text-[#092540] px-6 text-[16px] outline-none border-none placeholder:text-[#092540]/60"
+            />
+            <button className="w-[116px] h-[44px] rounded-[160px] bg-[#0057FF] text-white flex items-center justify-center hover:bg-[#0047CC] transition-colors">
+              Subscribe
+            </button>
+          </div>
+          <span className="font-['Plus Jakarta Sans'] font-normal text-[10px] sm:text-[12px] text-white mt-4 opacity-80 leading-[150%] tracking-[-0.01em] md:ml-6 max-w-[300px]">
+            By subscribing, you agree to our Privacy Policy
+          </span>
+        </section>
+        {/* Footer Links - Desktop positioning preserved, mobile repositioned */}
+        <nav className="absolute bottom-16 left-4 sm:bottom-14 sm:left-8 md:bottom-6 md:left-8 lg:left-34 flex flex-col sm:flex-row gap-1 sm:gap-8 z-10">
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[12px] sm:text-[14px] leading-[150%] sm:leading-[180%] md:leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[12px] sm:text-[14px] leading-[150%] sm:leading-[180%] md:leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors"
+          >
+            Terms of Service
+          </a>
+          <a
+            href="#"
+            className="font-['Plus Jakarta Sans'] font-normal text-[12px] sm:text-[14px] leading-[150%] sm:leading-[180%] md:leading-[240%] tracking-[-0.02em] text-[#8C8F9D] hover:text-white transition-colors"
+          >
+            Cookie Policy
+          </a>
+        </nav>
+        {/* Copyright - Positioned on the right side */}
+        <small className="absolute bottom-6 right-4 sm:right-8 md:bottom-6 md:right-16 flex flex-row gap-8 z-10 text-right max-w-[200px] sm:max-w-none">
+          <span className="font-['Plus Jakarta Sans'] font-normal text-[10px] sm:text-[12px] md:text-[14px] leading-[120%] sm:leading-[150%] md:leading-[240%] tracking-[-0.02em] text-[#8C8F9D]">
+            © 2024 James Alonso. All rights reserved
+          </span>
+        </small>
       </div>
     </footer>
   </Container>

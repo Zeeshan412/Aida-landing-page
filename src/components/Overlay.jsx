@@ -5,16 +5,16 @@ const Overlay = () => {
   // Suggested questions data
   const suggestedQuestions = [
     {
-      text: "What are the steps to file a petition?",
-      prefix: "Suggested :",
+      text: 'What are the steps to file a petition?',
+      prefix: 'Suggested :',
       showPrefix: true,
     },
     {
-      text: "How can I draft a legal contract?",
+      text: 'How can I draft a legal contract?',
       showPrefix: false,
     },
     {
-      text: "What are the court fees for a case?",
+      text: 'What are the court fees for a case?',
       showPrefix: false,
     },
   ];
@@ -38,7 +38,7 @@ const Overlay = () => {
   );
 
   return (
-    <div className="w-full max-w-[1199px] mx-auto -mt-16 mb-8 shadow-[0_4px_13.8px_rgba(0,0,0,0.2)] border border-[rgba(0,0,0,0.15)] rounded-lg bg-white z-20 relative">
+    <section className="w-full max-w-[1199px] mx-auto -mt-16 mb-8 shadow-[0_4px_13.8px_rgba(0,0,0,0.2)] border border-[rgba(0,0,0,0.15)] rounded-lg bg-white z-20 relative">
       <div className="p-8">
         <div>
           <h2 className="font-semibold font-poppins text-[#092d50] leading-8 tracking-normal mb-6 text-[2rem] sm:text-[2.3rem] md:text-[2.8rem] text-center">
@@ -85,7 +85,7 @@ const Overlay = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,15 @@
+export { default as Button } from './Button';
+export { default as Chatbox } from './Chatbox';
+export { default as ChatboxButtons } from './ChatboxButtons';
+export { default as FeatureSection } from './FeatureSection';
+export { default as Footer } from './Footer';
+export { default as Hero } from './Hero';
+export { default as IconBadge } from './IconBadge';
+export { default as LegalQuestions } from './LegalQuestions';
+export { default as Navbar } from './Navbar';
+export { default as Overlay } from './Overlay';
+export { default as ScoresSection } from './ScoresSection';
+export { default as WhyChoose } from './WhyChoose';
+export { default as WhyChooseButton } from './WhyChooseButton';
+export { default as UsersSaySection } from './UsersSaySection';
+export { default as SubscriptionPlans } from './SubscriptionPlans';

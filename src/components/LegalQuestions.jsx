@@ -5,20 +5,20 @@ const LegalQuestionsSection = () => {
   const legalQuestions = [
     {
       id: 1,
-      question: "How do I file a petition in Turkish court?",
-      answer: "To file a petition, follow these steps.",
+      question: 'How do I file a petition in Turkish court?',
+      answer: 'To file a petition, follow these steps.',
       isPopular: true,
     },
     {
       id: 2,
-      question: "How do I file a petition in Turkish court?",
-      answer: "To file a petition, follow these steps.",
+      question: 'How do I file a petition in Turkish court?',
+      answer: 'To file a petition, follow these steps.',
       isPopular: true,
     },
     {
       id: 3,
-      question: "How do I file a petition in Turkish court?",
-      answer: "To file a petition, follow these steps.",
+      question: 'How do I file a petition in Turkish court?',
+      answer: 'To file a petition, follow these steps.',
       isPopular: true,
     },
   ];
@@ -50,9 +50,9 @@ const LegalQuestionsSection = () => {
           Discover what others are asking AiDA and see its expert responses
         </p>
       </div>
-      <div className="legal-questions-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {legalQuestions.map((item) => (
-          <div
+          <article
             key={item.id}
             className="relative bg-white border border-black/15 shadow-[0_4px_13.8px_rgba(0,0,0,0.2)] rounded-lg h-[220px] cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
           >
@@ -77,7 +77,7 @@ const LegalQuestionsSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>
